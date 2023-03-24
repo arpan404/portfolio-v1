@@ -1,7 +1,5 @@
 const toggleBtn = document.getElementById("mode-toggle-btn");
-if (window.location.href !== "https://arpanbhandari.com.np") {
-  window.location.replace("https://arpanbhandari.com.np");
-}
+
 const setDarkMode = () => {
   document.documentElement.classList.add("dark");
   localStorage.setItem("theme", "dark");
