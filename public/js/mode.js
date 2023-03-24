@@ -1,14 +1,10 @@
 const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const userTheme = localStorage.getItem("theme");
-window.addEventListener("load", ()=>{
-  if(window.location.href !== "https://arpanbhandari.com.np"){
-    console.log("not valid");
-    console.log(window.location.href);
 
-  }
-})
 const themeSet = () => {
-
+  if(window.location.href !== "https://arpanbhandari.com.np/"){
+    window.location.replace("https://arpanbhandari.com.np/");
+  }
   if (userTheme === "dark" || (!userTheme && systemTheme)) {
     document.documentElement.classList.add("dark");
     return;
