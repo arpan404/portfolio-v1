@@ -9,8 +9,8 @@ const setLightMode = () => {
   localStorage.setItem("theme", "light");
 };
 toggleBtn.addEventListener("click", (e) => {
-  if (window.location.href !== "https://arpanbhandari.com.np") {
-    window.location.replace("https://arpanbhandari.com.np");
+  if (window.location.href !== "https://arpanbhandari.com.np/") {
+    window.location.replace("https://arpanbhandari.com.np/");
   }
   if (document.documentElement.classList.contains("dark")) {
     setLightMode();
